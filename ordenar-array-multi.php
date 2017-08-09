@@ -3,7 +3,7 @@
 /*
  * Nome: Deinar Bottamedi
  * Data: 15/05/2017
- * Como fazer ordenção de uma array multidimensional
+ * Como fazer ordenÃ§Ã£o de uma array multidimensional
  */
 
 //Array fora da ordem
@@ -16,6 +16,7 @@ $dados = [
     4 => ['cod_veiculo' => 100, 'nome' => 'astra', 'valor' => 35500.00]
 ];
 
+// Imprimir array original
 echo "Array fora da ordem:";
 echo "<br/>";
 echo "<pre>";
@@ -32,9 +33,10 @@ foreach ($dados as $chave => $linha) {
 }
 
 // Ordena os dados por nome crescente, valor decrescente.
-// Adiciona $dados como último parâmetro, para ordenar por uma chave comum.
+// Adiciona $dados como Ãºltimo parÃ¢metro, para ordenar por uma chave comum.
 array_multisort($nome, SORT_ASC, $valor, SORT_DESC, $dados);
 
+// Imprimir array ordenada
 echo "Array ordenada por 'nome' em ordem crescente e por 'valor' em ordem decrescente:";
 echo "<br/>";
 echo "<pre>";
